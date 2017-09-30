@@ -1,0 +1,14 @@
+<div style="margin-top:10px;">
+    {{#if session.isAuthenticated}}
+      {{!-- <a {{action 'logout'}} class="btn btn-danger navbar-btn navbar-right">Logout</a>--}}
+      {{#if sessionUser.user}}
+      
+            <img class="rounded" src={{sessionUser.user.avatarUrl}}/> 
+              
+         <h4>Signed in as {{sessionUser.user.name}}</h4>
+          <a style="cursor: pointer;" {{action 'logout'}}><h4>Logout</h4></a> 
+      {{/if}}
+    {{else}}
+      <a {{action 'login'}} >Login with Github</a>
+    {{/if}}
+    </div>

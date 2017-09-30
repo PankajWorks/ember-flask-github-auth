@@ -1,0 +1,9 @@
+img.rounded {
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
