@@ -26,7 +26,7 @@ module.exports = function(environment) {
       providers: {
           'github-oauth2': {
               scope: 'user',
-              apiKey: '832932eeba0fa0fa0a0a',
+              apiKey: '<Github API Key>',
               tokenExchangeUri: 'http://localhost:5000/v1/token'
           }
       }
@@ -39,7 +39,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.torii.providers['github-oauth2'].apiKey = '832932eeba0fa0fa0a0a';
+    ENV.torii.providers['github-oauth2'].apiKey = '<Github API Key>';
     ENV.torii.providers['github-oauth2'].redirectUri = 'http://localhost:4200';
     ENV.torii.providers['github-oauth2'].tokenExchangeUri = 'http://localhost:5000/v1/token';
   }
